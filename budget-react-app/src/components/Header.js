@@ -3,11 +3,11 @@ import { Home } from "../Home";
 import { Istorija } from "../Istorija";
 import { BrowserRouter, Route, Switch, NavLink } from "react-router-dom";
 
-export const Header = () => {
+export const Header = (props) => {
   return (
     <BrowserRouter>
       <div className="App container">
-        <h3 className="d-flex justify-content-center m-3">Budget App</h3>
+        <h3 className="d-flex justify-content-center m-3">{props.title}</h3>
 
         <nav className="navbar navbar-expand-sm bg-light navbar-dark">
           <ul className="navbar-nav">

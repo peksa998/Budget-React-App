@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <GlobalProvider>
-      <Header />
+      <Header title="Budget App" />
     </GlobalProvider>
   );
 }
